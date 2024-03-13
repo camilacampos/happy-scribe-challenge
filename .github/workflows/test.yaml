@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RAILS_ENV: test
-      DATABASE_URL: postgres://postgres:postgres@localhost:5432/changeme_test
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/happy_scribe_test
     services:
       postgres:
         image: postgres

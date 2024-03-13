@@ -10,12 +10,12 @@ default: &default
 
 development:
   <<: *default
-  database: changeme_development
+  database: happy_scribe_development
 
 test:
   <<: *default
-  database: changeme_test
+  database: happy_scribe_test
 
 production:
   <<: *default
-  database: changeme_production
+  database: happy_scribe_production

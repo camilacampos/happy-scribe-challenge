@@ -25,9 +25,9 @@ services:
       - '7777:7777'
     networks:
       default:
-      changeme:
+      happy_scribe:
         aliases:
-          - changeme
+          - happy_scribe
     depends_on:
       - db
       - sidekiq
@@ -64,7 +64,7 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: ''
       POSTGRES_HOST_AUTH_METHOD: trust
-      POSTGRES_DB: "changeme_development"
+      POSTGRES_DB: "happy_scribe_development"
     ports:
       - '7771:5432'
     volumes:
@@ -84,5 +84,5 @@ volumes:
   bundle_path:
 
 networks:
-  changeme:
+  happy_scribe:
     external: true
